@@ -14,8 +14,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='jesus',
-    maintainer_email='jesus@todo.todo',
+    maintainer='celia',
+    maintainer_email='celia@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
@@ -26,6 +26,7 @@ setup(
             'empaquetador_nodo = interaccion.empaquetador_nodo:main',
             'informacion_personal_nodo = interaccion.informacion_personal_nodo:main',
             'posicion_usuario_nodo = interaccion.posicion_usuario_nodo:main',
+            'matematico_nodo = interaccion.matematico_nodo:main',
 
         ],
     },

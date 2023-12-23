@@ -20,8 +20,6 @@ class EmocionUsuarioNode(Node):
             self.get_logger().info("Información personal publicada")
 
         
-    
-
 def main(args=None):
     rclpy.init(args=args)
 

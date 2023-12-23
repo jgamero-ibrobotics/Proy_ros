@@ -49,4 +49,13 @@ def generate_launch_description():
             # emulate_tty=True,
             # prefix='gnome-terminal --',
         ),
+        # Nodo 6: matematico_nodo
+        Node(
+            package='interaccion',
+            executable='matematico_nodo',
+            name='matematico_nodo',
+            output='screen',
+            # emulate_tty=True,
+            # prefix='gnome-terminal --',
+        ),
     ])

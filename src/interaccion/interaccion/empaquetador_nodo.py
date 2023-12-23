@@ -13,7 +13,7 @@ class EmpaquetadorNodo(Node):
         self.subscriber2 = self.create_subscription(EmocionUsuario, 'emocion_topic', self.callback_nodo2, 10)
         self.subscriber3 = self.create_subscription(PosicionUsuario, 'pos_usuario_topic', self.callback_nodo3, 10)
 
-        self.dialogo_publisher = self.create_publisher(Usuario, 'topic_dialogo', 10)
+        self.dialogo_publisher = self.create_publisher(Usuario, 'user_topic', 10)
         self.reset_message()
 
     def reset_message(self):
