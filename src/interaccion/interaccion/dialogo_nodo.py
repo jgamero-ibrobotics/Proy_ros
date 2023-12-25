@@ -32,7 +32,7 @@ class DialogoNode(Node):
 
     def send_request(self, entrada):#Mandamos peticion con la edad
         self.req.entrada = entrada
-        self.future = self.cli.call_async(self.req).add_done_callback(self.servicio_callback)#Configuramos un callback para menjar la respuesta del servicio
+        self.future = self.cli.call_async(self.req).add_done_callback(self.servicio_callback)#Configuramos un callback para manejar la respuesta del servicio
         
     def servicio_callback(self, future):#Maneja la respuesta del servicio una vez está disponible
         try:

@@ -11,7 +11,7 @@ class MatematicoNodo(Node):
     
     def multiplicador_callback(self, request, response):
         response.resultado = request.entrada*2
-        self.get_logger().info('Incoming request\n: %d ' % (request.entrada))
+        self.get_logger().info('Incoming request: %d ' % (request.entrada))
         return response
     
 def main(args=None):

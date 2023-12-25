@@ -7,7 +7,7 @@ class EmocionUsuarioNode(Node):
         super().__init__('emocion_usuario_nodo')
 
     def run(self):
-        publisher = self.create_publisher(EmocionUsuario, 'emocion_topic', 10)
+        publisher = self.create_publisher(EmocionUsuario, 'emocion_topic', 10)#Creamos el publicador
         while rclpy.ok():
             emocion = input("Ingrese como se siente: ")
 
